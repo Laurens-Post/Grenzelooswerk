@@ -19,4 +19,4 @@ Route::get('/form','FormController@index');
 
 Route::get('/form/create','FormController@create');
 
-Route::post('/fromsucceeded','FormController@storeDevice');
+Route::post('/formsucceeded','FormController@storeDevice');
