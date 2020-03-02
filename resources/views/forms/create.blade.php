@@ -81,7 +81,15 @@
         </div>
         <div>
             <label>Soort opleiding</label>
-            <input type="text" name="kind_of_education" placeholder="Wat is de naam van uw opleiding?">
+            <div class="form-group">
+                <select name="type_education_id" id="education_types" class="form-control">
+                    @foreach($type_educations as $id => $type_education)
+                        <option value="{{ $id }}">
+                            {{ $type_education }}
+                        </option>
+                    @endforeach
+                </select>
+            </div>
         </div>
         <div>
             <label>Description</label>
@@ -115,6 +123,11 @@
 
     $("#education").select2({
         placeholder: "Kies opleiding",
+        allowClear: false
+    });
+
+    $("#education_types").select2({
+        placeholder: "Geef de naam van je opleiding",
         allowClear: false
     });
 </script>
