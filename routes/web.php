@@ -15,3 +15,4 @@ Route::get('/form','FormController@index');
 
 Route::get('/form/create','FormController@create');
 
+Route::post('/form/post','FormController@storeForm');
