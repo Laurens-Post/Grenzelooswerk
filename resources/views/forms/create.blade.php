@@ -4,14 +4,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
+        body {font-family: Rubik, Arial, sans-serif;;}
         * {box-sizing: border-box;}
 
         input[type=text], select, textarea {
             width: 100%;
             padding: 12px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 8px;
             box-sizing: border-box;
             margin-top: 6px;
             margin-bottom: 16px;
@@ -19,21 +19,22 @@
         }
 
         input[type=submit] {
-            background-color: #4CAF50;
+            background-color: #ed743e;
             color: white;
             padding: 12px 20px;
             border: none;
-            border-radius: 4px;
+            font-weight: 500;
+            border-radius: 8px;
             cursor: pointer;
         }
 
         input[type=submit]:hover {
-            background-color: #45a049;
+            background-color: #f2895a;
         }
 
         .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
+            border-radius: 8px;
+            background-color: #efefef;
             padding: 20px;
         }
     </style>
@@ -67,7 +68,7 @@
             <input type="text" name="education" placeholder="Education">
         </div>
         <div>
-            <label>Soort Opleiding</label>
+            <label>Soort opleiding</label>
             <input type="text" name="kind_of_education" placeholder="Kind of education">
         </div>
         <div>
