@@ -65,7 +65,15 @@
         </div>
         <div>
             <label>Opleiding</label>
-            <input type="text" name="education" placeholder="Education">
+            <div class="form-group">
+                <select name="education_id" id="education" class="form-control">
+                    @foreach($educations as $id => $education)
+                        <option value="{{ $id }}">
+                            {{ $education }}
+                        </option>
+                    @endforeach
+                </select>
+            </div>
         </div>
         <div>
             <label>Soort opleiding</label>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Form;
 use App\Country;
+use App\Education;
 
 class FormController extends Controller
 {
@@ -17,8 +18,9 @@ class FormController extends Controller
     }
 
     public function create(){
+        $educations = Education::all()->pluck('name', 'id')->prepend(trans('Selecteer opleiding'), '');
         $countries = Country::all()->pluck('name', 'id')->prepend(trans('Selecteer land'), '');
-        return view('forms.create', compact('countries'));
+        return view('forms.create', compact('countries','educations'));
     }
 
     public function storeForm(){
