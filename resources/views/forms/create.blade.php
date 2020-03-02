@@ -49,9 +49,18 @@
 
         {{ csrf_field() }}
 
+
         <div>
-            <label>Land behaald opleiding</label>
-            <input type="text" name="country" placeholder="Country">
+            <label for="country">Land behaald opleiding</label>
+            <div class="form-group">
+                <select name="country_id" id="country" class="form-control">
+                    @foreach($countries as $id => $country)
+                        <option value="{{ $id }}">
+                            {{ $country }}
+                        </option>
+                    @endforeach
+                </select>
+            </div>
         </div>
         <div>
             <label>Opleiding</label>
@@ -73,12 +82,14 @@
             <label>Datum</label>
             <input type="date" name="date" placeholder="Date">
         </div>
+        <br />
         <div>
             <label>Diploma</label>
-            <input type="text" name="diploma" placeholder="diploma">
+            <input type="radio" name="diploma" value="1" checked> Ja
+            <input type="radio" name="diploma" value="0"> Nee
         </div>
         <div>
-
+        <br/>
             <input type="submit" value="Verstuur">
 
         </div>

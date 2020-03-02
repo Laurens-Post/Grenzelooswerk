@@ -8,7 +8,7 @@
 <h1>Grenzelooswerk test form</h1>
 
 @foreach ($forms as $form)
-    <li> {{ $form->country}}  </li>
+    <li> {{ $form}}  </li>
 @endforeach
 
 </body>

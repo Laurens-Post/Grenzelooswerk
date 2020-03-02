@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Form;
+use App\Country;
 
 class FormController extends Controller
 {
@@ -16,7 +17,8 @@ class FormController extends Controller
     }
 
     public function create(){
-        return view('forms.create');
+        $countries = Country::all()->pluck('name', 'id')->prepend(trans('Selecteer land'), '');
+        return view('forms.create', compact('countries'));
     }
 
     public function storeForm(){
