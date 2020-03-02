@@ -4,7 +4,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body {font-family: Rubik, Arial, sans-serif;;}
+        body {font-family: Montserrat, Arial, sans-serif;}
         * {box-sizing: border-box;}
 
         input[type=text], select, textarea {
@@ -89,13 +89,13 @@
         </div>
         <div>
             <label>Datum</label>
-            <input type="date" name="date" placeholder="Date">
+            <input type="text" name="date" placeholder="Date">
         </div>
         <br />
         <div>
             <label>Diploma</label>
-            <input type="radio" name="diploma" value="1" checked> Ja
-            <input type="radio" name="diploma" value="0"> Nee
+            <input type="radio" name="diploma" value="1"> Ja
+            <input type="radio" name="diploma" value="0" checked> Nee
         </div>
         <div>
         <br/>
