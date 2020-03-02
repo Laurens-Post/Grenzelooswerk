@@ -16,7 +16,7 @@ class FormController extends Controller
     }
 
     public function create(){
-        return view('devices.create');
+        return view('forms.create');
     }
 
     public function storeForm(){
