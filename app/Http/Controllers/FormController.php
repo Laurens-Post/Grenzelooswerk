@@ -21,17 +21,17 @@ class FormController extends Controller
 
     public function storeForm(){
 
-        $form = new Form();
+        $forms = new Form();
 
-        $form->country = request('country');
-        $form->education = request('education');
-        $form->kind_of_education = request('kind_of_education');
-        $form->name_school = request('name_school');
-        $form->description = request('description');
-        $form->date = request('date');
-        $form->diploma = request('diploma');
+        $forms->country = request('country');
+        $forms->education = request('education');
+        $forms->kind_of_education = request('kind_of_education');
+        $forms->name_school = request('name_school');
+        $forms->description = request('description');
+        $forms->date = request('date');
+        $forms->diploma = request('diploma');
 
-        $form->save();
+        $forms->save();
 
         return redirect('/form');
 

@@ -45,7 +45,7 @@
 
 <div class="container">
 
-    <form method="POST" action="/formsucceeded">
+    <form method="POST" action="post">
 
         {{ csrf_field() }}
 
@@ -55,19 +55,23 @@
         </div>
         <div>
             <label>Opleiding</label>
-            <input type="text" name="kind_of_education" placeholder="Kind of education">
+            <input type="text" name="education" placeholder="Education">
         </div>
         <div>
             <label>Soort Opleiding</label>
+            <input type="text" name="kind_of_education" placeholder="Kind of education">
+        </div>
+        <div>
+            <label>Naam school</label>
             <input type="text" name="name_school" placeholder="Name school">
         </div>
         <div>
             <label>Description</label>
-            <textarea name="description" placeholder="Device Description"></textarea>
+            <textarea name="description" placeholder="Description"></textarea>
         </div>
         <div>
             <label>Datum</label>
-            <input type="text" name="date" placeholder="Date">
+            <input type="date" name="date" placeholder="Date">
         </div>
         <div>
             <label>Diploma</label>
