@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/form','FormController@index');
+Route::get('/','FormController@index');
 
 Route::get('/form/create','FormController@create');
 

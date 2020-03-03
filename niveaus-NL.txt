@@ -1,0 +1,18 @@
+Basis onderwijs
+Voortgezet onderwijs
+VMBO-bbl (basisberoepsgerichte leerweg)
+VMBO-k (Kader)
+VMBO-gl Gemengde leerweg 
+VMBO-Tl (theoretische leerweg)
+HAVO
+VWO
+MBO niveau 1
+MBO niveau 2
+MBO niveau 3
+MBO niveau 4
+HBO
+Bachelor
+Master
+Universiteit-WO
+Bachelor-WO
+Master-WO

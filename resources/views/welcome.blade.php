@@ -68,7 +68,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/forms/create') }}">Klik hier</a> om een opleiding toe te voegen
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -81,7 +81,6 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Je moeder
                 </div>
 
                 <div class="links">
