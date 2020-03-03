@@ -8,24 +8,26 @@ use App\Form;
 use App\Country;
 use App\Education;
 use App\Education_des;
+use App\Education_frs;
 use App\EducationTypes;
+use App\EducationTypes_fr;
 
 class FormController extends Controller
 {
     public function index(){
 
         $forms = Form::all();
-
         return view('forms.index',compact('forms'));
     }
 
     public function create(){
         $educations = Education::all()->pluck('name', 'id')->prepend(trans('Wat is het niveau van de opleiding'));
         $educations_de = Education_des::all()->pluck('name', 'id')->prepend(trans('Wat is het niveau van de opleiding'));
-        $educations_fr = Education_fr::all()->pluck('name', 'id')->prepend(trans('Wat is het niveau van de opleiding'));
-        $type_educations = EducationTypes::all()->pluck('name', 'id')->prepend(trans('Vul hier de naam van de opleiding'));
+        $educations_fr = Education_frs::all()->pluck('name', 'id')->prepend(trans('Wat is het niveau van de opleiding'));
+        $type_educations = EducationTypes::all()->pluck('name', 'id')->prepend(trans('Vul hier de soort opleiding / studie'));
+        $type_educations_fr = EducationTypes_fr::all()->pluck('name', 'id')->prepend(trans('Vul hier de soort opleiding / studie'));
         $countries = Country::all()->pluck('name', 'id')->prepend(trans('Selecteer land'));
-        return view('forms.create', compact('countries','educations', 'type_educations', 'educations_de', 'educations_fr'));
+        return view('forms.create', compact('countries','educations', 'type_educations', 'educations_de', 'educations_fr', 'type_educations_fr'));
     }
 
     public function storeForm(){
@@ -42,8 +44,10 @@ class FormController extends Controller
 
         $forms->save();
 
-        return redirect('/');
-
+        return redirect('/thanks');
     }
 
+    public function thanks(){
+        return view('forms.thanks');
+    }
 }

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     <style>
-        body {font-family: Montserrat, Arial, sans-serif;}
+        body {font-family: Montserrat, Arial, sans-serif;
+        font-weight: 400;}
         * {box-sizing: border-box;}
 
         input[type=text], select, textarea {
@@ -75,6 +76,12 @@
         #Frankrijk.show {
             display: block;
         }
+        #date {
+            display: none;
+        }
+        #present {
+            display: none;
+        }
 /*
         #nameschool {
             display: none;
@@ -131,10 +138,6 @@
         </div>
 
         <div id="Nederland">
-            <div id="nameschool">
-                <label>Naam school</label>
-                <input type="text" name="name_school" placeholder="Wat is de naam van jou school?">
-            </div>
             <div id="niveau">
                 <label>Niveau opleiding</label>*
                 <div class="form-group">
@@ -147,8 +150,12 @@
                     </select>
                 </div>
             </div>
+            <div id="nameschool">
+                <label>Naam school</label>
+                <input type="text" name="name_school" placeholder="Wat is de naam van jou school?">
+            </div>
             <div id="education_type">
-                <label>Soort opleiding</label>
+                <label>Soort opleiding / studie</label>
                 <div class="form-group">
                     <select name="kind_of_education" id="education_types" class="form-control">
                         @foreach($type_educations as $id => $type_education)
@@ -160,7 +167,7 @@
                 </div>
             </div>
             <div id="description">
-                <label>Description</label>
+                <label>Beschrijving</label>
                 <textarea name="description" placeholder="Geef hier een beschrijving"></textarea>
             </div>
             <div id="date">
@@ -187,10 +194,6 @@
             </div>
         </div>
         <div id="Duitsland">
-            <div id="nameschool">
-                <label>Naam school</label>
-                <input type="text" name="name_school" placeholder="Wat is de naam van jou school?">
-            </div>
             <div id="niveau">
                 <label>Niveau opleiding</label>*
                 <div class="form-group">
@@ -203,19 +206,29 @@
                     </select>
                 </div>
             </div>
+            <div id="nameschool">
+                <label>Naam school</label>
+                <input type="text" name="name_school" placeholder="Wat is de naam van jou school?">
+            </div>
             <div id="education_type">
-                <label>Soort opleiding</label>
+                <label>Soort opleiding / studie</label>
                 <div class="form-group">
-                    <input type="text" name="kind_of_education" placeholder="Wat is de naam van de opleiding?">
+                    <select name="kind_of_education" id="education_types" class="form-control">
+                        @foreach($type_educations as $id => $type_education)
+                            <option value="{{ $type_education }}">
+                                {{ $type_education }}
+                            </option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
             <div id="description">
-                <label>Description</label>
+                <label>Beschrijving</label>
                 <textarea name="description" placeholder="Geef hier een beschrijving"></textarea>
             </div>
+            <br/>
+            <input type="submit" value="Verstuur">
         </div>
-        <br/>
-        <input type="submit" value="Verstuur">
         <div id="Frankrijk">
             <div id="niveau">
                 <label>Niveau opleiding</label>*
@@ -229,6 +242,28 @@
                     </select>
                 </div>
             </div>
+            <div id="nameschool">
+                <label>Naam school</label>
+                <input type="text" name="name_school" placeholder="Wat is de naam van jou school?">
+            </div>
+            <div id="education_type">
+                <label>Soort opleiding / studie</label>
+                <div class="form-group">
+                    <select name="kind_of_education" id="education_types" class="form-control">
+                        @foreach($type_educations_fr as $id => $type_education_fr)
+                            <option value="{{ $type_education_fr }}">
+                                {{ $type_education_fr }}
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
+            </div>
+            <div id="description">
+                <label>Beschrijving</label>
+                <textarea name="description" placeholder="Geef hier een beschrijving"></textarea>
+            </div>
+            <br/>
+            <input type="submit" value="Verstuur">
         </div>
     </form>
 </div>

@@ -16,3 +16,5 @@ Route::get('/','FormController@index');
 Route::get('/form/create','FormController@create');
 
 Route::post('/form/post','FormController@storeForm');
+
+Route::get('/thanks','FormController@thanks');
