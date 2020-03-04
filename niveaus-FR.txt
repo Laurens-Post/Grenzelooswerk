@@ -1,0 +1,24 @@
+Collège
+Lycée
+Université
+Écoles privées
+BAC GENERAL
+BTS
+BAC TECHNO
+DUT
+BAC PROFESSIONNEL
+DEUST
+CAP
+Classes préparatoires
+Licence
+Licence professionnelle
+Bachelor
+Doctorat
+
+- Commerce / Communication / Management 
+- Ingénieurie 
+- Droit Master 
+- Architecture 
+- Mode / Fashion 
+- Arts
+- Finance 

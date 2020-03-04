@@ -82,6 +82,15 @@
         #present {
             display: none;
         }
+        input[type="text"] {
+            border: 1px solid #e2e8f0;
+        }
+        input[type="text"]:focus {
+            border: 1px solid #ef7e4b;
+        }
+        input[type="text"]::placeholder, textarea::placeholder {
+            color: #cbd5e0;
+        }
 /*
         #nameschool {
             display: none;
@@ -181,7 +190,6 @@
             <div id="present">
                 <input type="checkbox" name="stillbusy" value="now"> Ik ben nog bezig met deze opleiding
             </div>
-            <br />
             <div>
                 <label>Diploma</label>
                 <input type="radio" name="diploma" value="1"> Ja
@@ -226,6 +234,11 @@
                 <label>Beschrijving</label>
                 <textarea name="description" placeholder="Geef hier een beschrijving"></textarea>
             </div>
+            <div>
+                <label>Diploma</label>
+                <input type="radio" name="diploma" value="1"> Ja
+                <input type="radio" name="diploma" value="0" checked> Nee
+            </div>
             <br/>
             <input type="submit" value="Verstuur">
         </div>
@@ -261,6 +274,11 @@
             <div id="description">
                 <label>Beschrijving</label>
                 <textarea name="description" placeholder="Geef hier een beschrijving"></textarea>
+            </div>
+            <div>
+                <label>Diploma</label>
+                <input type="radio" name="diploma" value="1"> Ja
+                <input type="radio" name="diploma" value="0" checked> Nee
             </div>
             <br/>
             <input type="submit" value="Verstuur">

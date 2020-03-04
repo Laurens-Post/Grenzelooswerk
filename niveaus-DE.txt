@@ -1,20 +1,13 @@
 Grundschule 
-Weiterführende 
-Schule
+Weiterführende Schule
 hauptschule 
 Realschule 
 gymnasium 
 Gesamtschule 
 Fachhochschule 
 Universität 
-hauptschulabschluss 
 Realschulabschluss 
 Abitur 
-Abgeschlossene 
-Ausbildung 
 Bachelor 
-Bachelor 
-Realschulabschluss 
-Master 
 Master 
 Hauptschulabschluss 

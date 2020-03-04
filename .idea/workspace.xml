@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8205deb-59c1-4b18-a9b1-282f6fdc175a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Education_fr.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Education_frs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FormController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/niveaus-NL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/niveaus-NL.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niveaus-DE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/niveaus-DE.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/forms/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forms/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +19,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FormController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="629">
               <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
@@ -119,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/forms/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="113" selection-start-line="113" selection-end-line="113" selection-end-column="12" />
+            <state relative-caret-position="323">
+              <caret line="241" column="13" selection-start-line="240" selection-start-column="12" selection-end-line="241" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -152,11 +148,11 @@
         <option value="$PROJECT_DIR$/resources/views/forms/index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_03_03_110257_create_education_de_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_03_03_112547_create_education_fr_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/forms/create.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_03_03_134111_create_education_types_fr_table.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/forms/thanks.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FormController.php" />
+        <option value="$PROJECT_DIR$/resources/views/forms/create.blade.php" />
       </list>
     </option>
   </component>
@@ -262,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="y" value="46" />
     <option name="width" value="1574" />
@@ -382,7 +378,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583146105109</updated>
-      <workItem from="1583146106562" duration="31350000" />
+      <workItem from="1583146106562" duration="32623000" />
     </task>
     <task id="LOCAL-00001" summary="Edited the education dropdown to have a search + dropdown">
       <created>1583166602752</created>
@@ -402,7 +398,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31350000" />
+    <option name="totallyTimeSpent" value="32623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -567,13 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/forms/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="113" selection-start-line="113" selection-end-line="113" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/forms/thanks.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -586,11 +575,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FormController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="629">
           <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/forms/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="241" column="13" selection-start-line="240" selection-start-column="12" selection-end-line="241" selection-end-column="13" />
         </state>
       </provider>
     </entry>
